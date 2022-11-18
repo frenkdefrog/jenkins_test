@@ -8,7 +8,7 @@ println('teszt1')
 println(x ? 'true' : 'false')
 println(x ? 'true' : 'false')
 
-
+branch_name = "relese"
 x = branch_name ==~ /^(sandbox|development|release.*)$/ &&  change_target ==~ /^(sandbox|development|release.*)$/
 
 println('teszt2')
