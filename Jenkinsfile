@@ -2,14 +2,14 @@
 def branch_name = "PR-123"
 def change_target = "sandbox"
 
-def x = branch_name =~ /^(sandbox|development|release.*)$/ ||  change_target =~ /^(sandbox|development|release.*)$/
+def x = branch_name =~ /^(sandbox|development|release.*)$/ &&  change_target =~ /^(sandbox|development|release.*)$/
 
 println('teszt1')
 println(x ? 'true' : 'false')
 println(x ? 'true' : 'false')
 
 
-x = branch_name ==~ /^(sandbox|development|release.*)$/ ||  change_target ==~ /^(sandbox|development|release.*)$/
+x = branch_name ==~ /^(sandbox|development|release.*)$/ &&  change_target ==~ /^(sandbox|development|release.*)$/
 
 println('teszt2')
 println(x ? 'true' : 'false')
