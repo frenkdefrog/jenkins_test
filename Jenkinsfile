@@ -9,7 +9,7 @@ println(x ? 'true' : 'false')
 println(x ? 'true' : 'false')
 
 
-def x = branch_name ==~ /^(sandbox|development|release.*)$/ ||  change_target ==~ /^(sandbox|development|release.*)$/
+x = branch_name ==~ /^(sandbox|development|release.*)$/ ||  change_target ==~ /^(sandbox|development|release.*)$/
 
 println('teszt2')
 println(x ? 'true' : 'false')
