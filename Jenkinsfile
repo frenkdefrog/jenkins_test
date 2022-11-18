@@ -5,8 +5,8 @@ def change_target = "sandbox"
 def x = branch_name =~ /^(sandbox|development|release.*)$/ &&  change_target =~ /^(sandbox|development|release.*)$/
 
 println('teszt1')
-println(x ? 'true' : 'false')
-println(x ? 'true' : 'false')
+println(x==1 ? 'true' : 'false')
+println(x=="cica" ? 'true' : 'false')
 
 branch_name = "release"
 x = branch_name ==~ /^(sandbox|development|release.*)$/ &&  change_target ==~ /^(sandbox|development|release.*)$/
